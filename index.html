@@ -1,15 +1,17 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark light" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Spectre Engine — private build</title>
+  <title>Spectre Engine</title>
 
-  <meta name="description" content="Spectre Engine: a razor-sharp C++ game engine built on raylib + Dear ImGui. Minimal, fast, production-minded. Private build." />
+  <meta name="description"
+    content="Spectre Engine: a high-performance C++ game engine. Minimal, fast, production-minded." />
   <meta property="og:title" content="Spectre Engine" />
-  <meta property="og:description" content="Minimal surface area. Maximum throughput. Private build." />
+  <meta property="og:description" content="Minimal surface area. Maximum throughput." />
   <meta property="og:type" content="website" />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -30,7 +32,8 @@
         <a class="navLink" href="#philosophy">Philosophy</a>
         <a class="navLink" href="#pipeline">Pipeline</a>
         <a class="navLink" href="#roadmap">Roadmap</a>
-        <button class="navBtn" id="cmdkBtn" type="button" aria-haspopup="dialog" aria-controls="cmdk" title="Command palette (Ctrl+K)">
+        <button class="navBtn" id="cmdkBtn" type="button" aria-haspopup="dialog" aria-controls="cmdk"
+          title="Command palette (Ctrl+K)">
           Ctrl+K
         </button>
         <button class="navBtn" id="themeBtn" type="button" title="Toggle theme">
@@ -44,8 +47,6 @@
   <header id="top" class="hero">
     <div class="container">
       <div class="badgeRow">
-        <span class="badge">PRIVATE BUILD</span>
-        <span class="badge subtle">NOT PUBLIC YET</span>
         <span class="badge subtle">C++ • raylib • Dear ImGui</span>
       </div>
 
@@ -90,8 +91,9 @@
       <div class="container">
         <h2 class="h2">Status</h2>
         <p class="p">
-          Spectre Engine is under active development and intentionally <span class="hi">not announced publicly</span>.
-          This page is a placeholder: it explains direction and philosophy without showcasing builds, demos, or metrics.
+        <p class="p">
+          Spectre Engine is under active development.
+          This page explains the direction and philosophy.
         </p>
 
         <div class="split">
@@ -283,7 +285,7 @@
 
   <footer class="footer">
     <div class="container footerInner">
-      <div class="mono">© <span id="year"></span> Spectre Engine — private</div>
+      <div class="mono">© <span id="year"></span> Spectre Engine</div>
       <div class="mono">
         <span class="sep">/</span>
         <button class="linkBtn" type="button" id="openCmdk">Open palette</button>
@@ -302,14 +304,14 @@
     <div class="modalCard" role="document">
       <div class="modalTop">
         <div>
-          <div class="badge subtle">PRIVATE</div>
           <h3 id="modalTitle" class="h3">Request early access</h3>
         </div>
         <button class="iconBtn" type="button" id="modalClose" aria-label="Close">✕</button>
       </div>
 
       <p class="p">
-        No public list yet. This just drafts an email to you can send — nothing is collected by the site.
+      <p class="p">
+        Join the waitlist for updates and early access.
       </p>
 
       <form id="waitlistForm" class="form">
@@ -320,7 +322,8 @@
 
         <label class="label">
           Note (optional)
-          <textarea class="input textarea" name="note" rows="4" placeholder="What are you building? What do you care about most?"></textarea>
+          <textarea class="input textarea" name="note" rows="4"
+            placeholder="What are you building? What do you care about most?"></textarea>
         </label>
 
         <div class="formActions">
@@ -345,7 +348,8 @@
         <div class="cmdkHint mono">Esc to close</div>
       </div>
 
-      <input id="cmdkInput" class="cmdkInput" type="text" placeholder="Type to search… (philosophy, pipeline, roadmap)" autocomplete="off" />
+      <input id="cmdkInput" class="cmdkInput" type="text" placeholder="Type to search… (philosophy, pipeline, roadmap)"
+        autocomplete="off" />
       <div id="cmdkList" class="cmdkList" role="listbox" aria-label="Commands"></div>
 
       <div class="cmdkFooter mono">
@@ -356,4 +360,5 @@
 
   <script src="js/app.js" defer></script>
 </body>
+
 </html>
