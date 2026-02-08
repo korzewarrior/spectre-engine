@@ -57,7 +57,7 @@
 
       <p class="lead">
         A high-performance C++ engine with a <span class="hi">Data‑oriented</span> architecture and a
-        <span class="hi">Unity‑style</span> production pipeline — built for speed, clarity, and control.
+        <span class="hi">Modern</span> production pipeline, built for speed, clarity, and control.
       </p>
 
       <div class="ctaRow">
@@ -72,7 +72,7 @@
         </div>
         <div class="card">
           <div class="k">Production pipeline</div>
-          <div class="v">Import → assets → scenes → build/run, frictionless.</div>
+          <div class="v">Import, assets, scenes, build/run. Frictionless.</div>
         </div>
         <div class="card">
           <div class="k">Minimal, not bare</div>
@@ -91,30 +91,18 @@
       <div class="container">
         <h2 class="h2">Status</h2>
         <p class="p">
-        <p class="p">
           Spectre Engine is under active development.
           This page explains the direction and philosophy.
         </p>
 
-        <div class="split">
-          <div class="panel">
-            <h3 class="h3">What it is</h3>
-            <ul class="list">
-              <li>Native C++ engine targeting a clean, modern workflow.</li>
-              <li>Editor tooling driven by Dear ImGui.</li>
-              <li>Rendering + windowing backed by raylib.</li>
-              <li>Aiming for a calm, predictable developer experience.</li>
-            </ul>
-          </div>
-          <div class="panel">
-            <h3 class="h3">What it isn&apos;t (yet)</h3>
-            <ul class="list">
-              <li>No public binaries, downloads, or docs.</li>
-              <li>No marketing screenshots or performance claims.</li>
-              <li>No promises on timelines.</li>
-              <li>Nothing you should ship with today.</li>
-            </ul>
-          </div>
+        <div class="panel">
+          <h3 class="h3">What it is</h3>
+          <ul class="list">
+            <li>Native C++ engine targeting a clean, modern workflow.</li>
+            <li>Editor tooling driven by Dear ImGui.</li>
+            <li>Rendering + windowing backed by raylib.</li>
+            <li>Aiming for a calm, predictable developer experience.</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -128,7 +116,6 @@
             <h3 class="h3">Sharp by design</h3>
             <p class="p">
               Spectre is built around a simple idea: keep the surface area small and the intent obvious.
-              The editor is a tool, not a theme park. The runtime is a machine, not a museum.
             </p>
             <div class="rule"></div>
             <ul class="list">
@@ -142,7 +129,6 @@
           <div class="card large">
             <h3 class="h3">Minimalist, robust</h3>
             <p class="p">
-              Minimalism isn&apos;t removing features — it&apos;s removing <span class="hi">surprise</span>.
               The goal is a sleek core that remains stable as tooling and pipeline grow.
             </p>
             <div class="rule"></div>
@@ -161,7 +147,7 @@
       <div class="container">
         <h2 class="h2">Production pipeline</h2>
         <p class="p">
-          Inspired by Unity&apos;s flow: content moves through a clean set of steps — import, organize, compose, run.
+          Content moves through a clean set of steps: import, organize, compose, run.
           The end goal is a workflow that makes iteration fast even when projects get messy.
         </p>
 
@@ -199,8 +185,8 @@
         <div class="callout">
           <div class="calloutTitle">A note on inspiration</div>
           <div class="calloutText">
-            Data-oriented architecture. Unity-inspired pipeline. Spectre is aiming for its own identity:
-            explicit, minimal, sleek — and <span class="hi">fast</span>.
+            Data-oriented architecture. Spectre is aiming for its own identity:
+            explicit, minimal, sleek, and <span class="hi">fast</span>.
           </div>
         </div>
       </div>
@@ -223,9 +209,7 @@
     <section id="roadmap" class="section">
       <div class="container">
         <h2 class="h2">Roadmap signals</h2>
-        <p class="p">
-          Not a promise — just the rough shape of where the engine is heading.
-        </p>
+
 
         <div class="roadGrid">
           <div class="card">
@@ -269,17 +253,12 @@
         <h2 class="h2">Contact</h2>
         <div class="contactRow">
           <div class="contactText">
-            <div class="contactText">
-              Interested in the technology? Request updates.
-            </div>
-            <div class="contactActions">
-              <button class="btn" type="button" id="copyEmail">Copy email</button>
-              <a class="btn ghost" href="#top">Back to top</a>
-            </div>
+            Interested in the technology? Request updates.
           </div>
-          <p class="fine">
-            This site ships with no analytics, no tracking, and no external dependencies.
-          </p>
+          <div class="contactActions">
+            <button class="btn" type="button" id="copyEmail">Copy email</button>
+            <a class="btn ghost" href="#top">Back to top</a>
+          </div>
         </div>
     </section>
   </main>
@@ -310,7 +289,6 @@
         <button class="iconBtn" type="button" id="modalClose" aria-label="Close">✕</button>
       </div>
 
-      <p class="p">
       <p class="p">
         Join the waitlist for updates and early access.
       </p>
@@ -349,8 +327,8 @@
         <div class="cmdkHint mono">Esc to close</div>
       </div>
 
-      <input id="cmdkInput" class="cmdkInput" type="text" placeholder="Type to search… (philosophy, pipeline, roadmap)"
-        autocomplete="off" />
+      <input id="cmdkInput" class="cmdkInput" type="text"
+        placeholder="Type to search... (philosophy, pipeline, roadmap)" autocomplete="off" />
       <div id="cmdkList" class="cmdkList" role="listbox" aria-label="Commands"></div>
 
       <div class="cmdkFooter mono">
