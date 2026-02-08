@@ -18,7 +18,7 @@
 
   function applyTheme(theme) {
     html.setAttribute("data-theme", theme);
-    try { localStorage.setItem(THEME_KEY, theme); } catch {}
+    try { localStorage.setItem(THEME_KEY, theme); } catch { }
   }
 
   function toggleTheme() {
@@ -31,7 +31,7 @@
   try {
     const saved = localStorage.getItem(THEME_KEY);
     if (saved === "light" || saved === "dark") applyTheme(saved);
-  } catch {}
+  } catch { }
 
   $("#themeBtn")?.addEventListener("click", toggleTheme);
   $("#toggleThemeFooter")?.addEventListener("click", toggleTheme);
@@ -93,7 +93,6 @@
   const modalClose = $("#modalClose");
   const waitlistOpen = $("#waitlistOpen");
   const waitlistForm = $("#waitlistForm");
-  const editEmailBtn = $("#editEmail");
 
   function openModal() {
     if (!modal) return;
@@ -120,13 +119,7 @@
     if (e.key === "Escape" && modal?.classList.contains("open")) closeModal();
   });
 
-  editEmailBtn?.addEventListener("click", () => {
-    const current = getEmail();
-    const next = prompt("Set contact email for draft:", current);
-    if (!next) return;
-    $("#contactEmail").textContent = next.trim();
-    toast("Updated contact email");
-  });
+
 
   waitlistForm?.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -319,11 +312,11 @@
     ctx.clearRect(0, 0, W, H);
 
     // soft vignette
-    const g = ctx.createRadialGradient(W*0.5, H*0.5, Math.min(W,H)*0.12, W*0.5, H*0.5, Math.max(W,H)*0.62);
+    const g = ctx.createRadialGradient(W * 0.5, H * 0.5, Math.min(W, H) * 0.12, W * 0.5, H * 0.5, Math.max(W, H) * 0.62);
     g.addColorStop(0, "rgba(0,0,0,0)");
     g.addColorStop(1, colorForTheme(0.08));
     ctx.fillStyle = g;
-    ctx.fillRect(0,0,W,H);
+    ctx.fillRect(0, 0, W, H);
 
     // particles + links
     ctx.fillStyle = colorForTheme(0.55);
@@ -349,7 +342,7 @@
         const q = particles[j];
         const dx = p.x - q.x;
         const dy = p.y - q.y;
-        const d2 = dx*dx + dy*dy;
+        const d2 = dx * dx + dy * dy;
         const max = (170 * DPR) * (170 * DPR);
         if (d2 < max) {
           const a = 1 - (d2 / max);
