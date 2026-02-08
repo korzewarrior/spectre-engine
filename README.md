@@ -10,7 +10,7 @@ Open `index.html` and tweak text in the hero + sections.
 
 ## Set your real contact email
 Open the page → click **Request early access** → hit **edit** and set your email once.
-(Or hardcode it in `index.html` by replacing `hello@spectre.engine`.)
+(Or hardcode it in `index.html` by replacing `hello@signalspike.games`.)
 
 ## Files
 - `index.html` — structure + copy

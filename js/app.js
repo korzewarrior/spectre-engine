@@ -71,7 +71,7 @@
   // ---------------------------
   // Copy email
   // ---------------------------
-  const defaultEmail = { value: "hello@spectre.engine" };
+  const defaultEmail = { value: "hello@signalspike.games" };
   function getEmail() {
     const el = $("#contactEmail");
     return el?.textContent?.trim() || defaultEmail.value;
