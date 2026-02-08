@@ -68,23 +68,7 @@
   const yearEl = $("#year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  // ---------------------------
-  // Copy email
-  // ---------------------------
-  const defaultEmail = { value: "hello@signalspike.games" };
-  function getEmail() {
-    const el = $("#contactEmail");
-    return el?.textContent?.trim() || defaultEmail.value;
-  }
-  $("#copyEmail")?.addEventListener("click", async () => {
-    const email = getEmail();
-    try {
-      await navigator.clipboard.writeText(email);
-      toast("Email copied");
-    } catch {
-      toast(email);
-    }
-  });
+
 
   // ---------------------------
   // Waitlist modal
@@ -129,7 +113,7 @@
 
     if (!email) return;
 
-    const to = getEmail();
+    const to = "hello@signalspike.games";
     const subject = encodeURIComponent("Spectre Engine — Early access request");
     const body = encodeURIComponent(
       `Hey,\n\nI'd like early access to Spectre Engine.\n\nMy email: ${email}\n\nNote:\n${note || "(none)"}\n\n—`
